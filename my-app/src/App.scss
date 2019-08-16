@@ -1,5 +1,11 @@
+
+
+
+
 .App {
   text-align: center;
+ 
+  
 }
 
 .App-logo {
@@ -31,3 +37,63 @@
     transform: rotate(360deg);
   }
 }
+
+
+@mixin card() {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #61dafb;
+  font-size: 20px;
+  color: #282c34;
+  &:hover {
+    color: #61dafb;
+    background-color: #282c34;
+
+  }
+}
+
+.ui.card:first-child {
+    @include card();
+}
+
+.ui.card:nth-child(2) {
+   @include card();
+}
+
+.ui.card:nth-child(3){
+  @include card();
+}
+
+
+.ui.card:nth-child(4){
+  @include card();
+}
+
+.ui.card:nth-child(5){
+  @include card();
+}
+
+.ui.card:nth-child(6){
+  @include card();
+}
+
+.ui.card:nth-child(7){
+  @include card();
+}
+
+.ui.card:nth-child(8){
+  @include card();
+}
+
+.ui.card:nth-child(9){
+  @include card();
+}
+
+.ui.card:nth-child(10){
+  @include card();
+}
+
+
+
